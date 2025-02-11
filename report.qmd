@@ -1,0 +1,104 @@
+---
+title: "Open Source Data Engineering Landscape 2024 - An Overview"
+author: 
+  - Eshika Sanjana Konyala
+  - Sowmya Sri Regu
+  - Srigana Pulikantham
+  - Viditha Reddy Enukulla
+date: "2024"
+categories: [Data Engineering, Open Source, Databases]
+output: html_document
+---
+
+# Title Page
+**Open Source Data Engineering Landscape 2024 - An Overview**
+
+**Authors:**
+- Eshika Sanjana Konyala - konyalae@vcu.edu  
+- Sowmya Sri Regu - regus@vcu.edu  
+- Srigana Pulikantham - pulikanthams@vcu.edu  
+- Viditha Reddy Enukulla - enukullav@vcu.edu  
+
+**Course:** ADVANCED DATABASE  
+**Instructor:** Thomas Gyeera  
+
+# TABLE OF CONTENTS
+1. Introduction  
+   1.1 Why present another landscape?  
+   1.2 Criteria for Tool Selection  
+2. Overview of Tool Categories  
+   2.1 Storage systems  
+   2.2 Data Lake Platform  
+   2.3 Data Integration  
+   2.4 Data Processing & Computation  
+   2.5 Workflow Management & DataOps  
+   2.6 Data Infrastructure & Monitoring  
+   2.7 ML Platform  
+   2.8 Metadata Management  
+   2.9 Analytics & Visualisation  
+3. Detailed Descriptions of Three Small Categories  
+   3.1 Distributed SQL DBMS  
+   3.2 Cache Stores  
+   3.3 Stream Processing  
+4. Reflection  
+   4.1 What I Liked About This Assignment  
+   4.2 What Was Difficult  
+   4.3 Suggestions for Future Assignments  
+5. Conclusion  
+
+# Introduction
+Data Engineering has been increasing rapidly with the help of open source tools and frameworks that are increasing rapidly. As technology is evolving with time, we need to keep up to date with new trends. So choosing the right tool for the right situation is important. This report will include some of the most active and impactful open-source tools and different categories of them so that it will be easy for decision making.
+
+## Why present another landscape?
+Other landscapes like MAD Landscape and Reppoint Open Source Top 25 focus on SaaS providers and startups. They mix both commercial and open-source tools. Surveys from GitHub and Stack Overflow will only give information on what is trending and only focus on certain databases and some other programming languages. This landscape mainly focuses on open-source tools that mainly apply to data platforms and data engineering lifecycle.
+
+## Criteria for Tool Selection
+As there are so many different open-source projects for each category, including every tool and service is impractical so there are different criteria to select tools.
+
+- Projects that are abandoned, retired, archived, and that are completely inactive over GitHub are excluded.
+- Projects that are new and have not gained any attention are excluded, however, some of them like OneTable have been included.
+- Different types of storage systems are included because data engineering mainly revolves around different internal and external storage systems.
+- Category names are chosen as simply as possible so that it will be easily understood. Grouping and labeling of different data systems is done.
+- Some tools can be involved in two categories but it is sorted based on its popularity in the market. Some databases cannot be determined so it's still unclear.
+- Some of the projects listed are not portable, some of them are open-core and are not fully accessible to the SaaS so while selecting it is important to see whether the tool is portable or not.
+
+# Overview of Tool Categories
+## Storage Systems
+Definition: Storage systems are structured practices used in storing, retrieving, and managing data efficiently.
+
+### Trending categories of storage systems:
+- **Vector databases** - Major use-case includes ML and AI Stacks.
+- **Streaming databases** - Examples are Materialize and RaisingWave.
+- **Distributed file systems and object stores** - Listed under Data Lake Platform.
+
+The Storage Systems section is divided into three main categories, each containing multiple subdivisions:
+1. **OLTP (Online Transaction Processing):** SQL vs. NoSQL
+2. **OLAP (Online Analytical Processing):** Offline (non-real-time) vs. Real-time (sub-second results)
+3. **HTAP (Hybrid Transactional/Analytical Processing):** NewSQL
+
+## Data Lake Platform
+Definition: A data lake platform is a comprehensive software solution that provides a centralized repository for storing, managing, and analyzing large volumes of diverse data in its raw format.
+
+### Storage Layer:
+- Distributed file systems (e.g., HDFS) and object stores (e.g., Apache Ozone) are foundational for on-premise or cloud-based data lakes.
+- Cloudera released CDP Private Cloud, incorporating Apache Ozone as an alternative to HDFS.
+
+### Data Serialization Formats:
+- Apache Parquet is the de facto standard for modern Data Lakes due to efficient compression and widespread availability.
+- Apache ORC is preferred for Hadoop ecosystems.
+
+### Decoupling of Storage and Compute Layers:
+- Improves resource distribution and efficiency.
+- Integrations with CockroachDB and Confluent's Kafka support object storage solutions like S3.
+
+### Open Table Formats:
+- Apache Hudi: Facilitates near-real-time updates and ACID transactions.
+- Apache Iceberg: High-performance data management.
+- Delta Lake: Tight integration with Databricks.
+
+### Unified Data Lakehouse Layers:
+- Solutions like OneTable and UniForm unify table formats for seamless integration.
+
+...
+
+(Continue adding the full content from the PDF word-for-word here)
